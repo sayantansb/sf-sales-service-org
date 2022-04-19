@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>RevenueShare</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>RevenueShares</value>
+    </caseValues>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- RevenueShares --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ProfitCenter --></label>
+        <name>ProfitCenter__c</name>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation><!-- ASIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DACH_CORE</masterLabel>
+            <translation><!-- DACH_CORE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DACH_EU</masterLabel>
+            <translation><!-- DACH_EU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FRANCE</masterLabel>
+            <translation><!-- FRANCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UNITED_KINGDOM</masterLabel>
+            <translation><!-- UNITED_KINGDOM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UNITED_STATES</masterLabel>
+            <translation><!-- UNITED_STATES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SalesManagerId --></label>
+        <name>SalesManagerId__c</name>
+    </fields>
+    <fields>
+        <label><!-- SalesManager --></label>
+        <name>SalesManager__c</name>
+        <relationshipLabel><!-- RevenueShares --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- TotalShareInPercent --></label>
+        <name>TotalShareInPercent__c</name>
+    </fields>
+    <fields>
+        <label><!-- TotalShareValue --></label>
+        <name>TotalShareValue__c</name>
+    </fields>
+    <gender>Neuter</gender>
+</CustomObjectTranslation>

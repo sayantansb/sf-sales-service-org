@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>FeatureProduct</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>FeatureProducts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- FeatureProducts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PricePerMonth --></label>
+        <name>PricePerMonth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price --></label>
+        <name>Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>NORMAL_ACCOUNT</masterLabel>
+            <translation><!-- NORMAL_ACCOUNT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PREMIUM_ACCOUNT</masterLabel>
+            <translation><!-- PREMIUM_ACCOUNT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- description --></label>
+        <name>description__c</name>
+    </fields>
+    <gender>Neuter</gender>
+</CustomObjectTranslation>
