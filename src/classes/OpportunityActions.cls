@@ -36,7 +36,15 @@ public with sharing class OpportunityActions {
         System.debug('OpportunityActions.processStatusChanges :: size of idListForPostStatusChanges = ' + idListForPostStatusChanges.size());
         if(idListForPostStatusChanges.size() > 0) {
             System.debug('OpportunityActions.processStatusChanges :: before call to OpportunityStatusEventService.publishPostStatusChangedNotificationAsync');
-            OpportunityStatusEventService.publishPostStatusChangedNotificationAsync(idListForPostStatusChanges);
+            /**
+             *  Approach 1 with PLatform Events
+            */
+            //OpportunityStatusEventService.publishPostStatusChangedNotificationAsync(idListForPostStatusChanges);
+
+            /**
+             *  Approach 2 with REST Call directly from salesforce future handler
+            */
+            BookingInvoker.invokeBookingAsync(idListForPostStatusChanges);
             System.debug('OpportunityActions.processStatusChanges :: after call to OpportunityStatusEventService.publishPostStatusChangedNotificationAsync');
         }
     }

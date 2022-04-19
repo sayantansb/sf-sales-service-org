@@ -24,7 +24,7 @@ public with sharing class OpportunityStatusEventService {
         for (Opportunity opportunity : opportunities) {
             accountIds.add(opportunity.AccountId);
         }
-        List<Account> accounts = [SELECT Id, OwnerId,ClearingHouse__c, LiableOffice__c, SalesTeam__c,BookingType__c,BillingTerms__c,SalesChannel__c,AccessType__c FROM Account WHERE Id IN :accountIds];
+        List<Account> accounts = [SELECT Id, Name, OwnerId,ClearingHouse__c, LiableOffice__c, SalesTeam__c,BookingType__c,BillingTerms__c,SalesChannel__c,AccessType__c FROM Account WHERE Id IN :accountIds];
         Map<Id, Account> accountById = new Map<Id, Account>();
         for (Account account : accounts) {
             accountById.put(account.Id, account);
@@ -103,7 +103,7 @@ public with sharing class OpportunityStatusEventService {
         try{
             opportunityStatusEvent.OpportunityId__c  = opportunity.Id;
             opportunityStatusEvent.AgreementForm__c = opportunity.AgreementForm__c;
-            opportunityStatusEvent.DealType__c = opportunity.AgreementForm__c;
+            opportunityStatusEvent.DealType__c = opportunity.DealType__c;
             opportunityStatusEvent.RequestorId__c  = String.valueOf(opportunity.RequestorId__c);
             System.debug('After creating PlatformEvent for Opportunity Id : ' + opportunity.Id);
         } catch (Exception e) {
